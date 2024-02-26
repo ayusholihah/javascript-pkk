@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<p>Displaying document.documentElement</p>
+<img id="image" src="image/16-800x534.jpg" width="100" height="100">
+<br> 
+<button onclick="zoomOut()">Zoom Out</button>
+<button onclick="zoomIn()">Zoom In</button>
+
+<script>
+const image = document.getElementById("image");
+
+function zoomOut() {
+  image.width = 200;
+  image.height = 200;
+}
+
+function zoomIn() {
+  image.width = 350;
+  image.height = 350;
+}
+</script>
+
+</body>
+</html>
